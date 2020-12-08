@@ -8,10 +8,10 @@ class Player:
         self.motto = random.choice(mottos)
     
     def sayMotto(self):
-        print(f"As {self.name} enters he says {self.motto}")
+        print(f"As {self.name} enters he says {self.motto}\n")
 
     def intro(self):
-        print(f"Welcome {self.name}")
+        print(f"Welcome {self.name}\n")
 
     def __str__(self):
         return self.name
