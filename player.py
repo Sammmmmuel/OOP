@@ -1,18 +1,18 @@
 import random
 
 class Player: 
-    def __init__(self, name, origin, ability, motto):
+    def __init__(self, name, motto):
         mottos = ["omae", "wa", "mou", "shinderiu"]
         self.name = name
-        self.origin = origin 
-        self.ability = ability
+        # self.origin = origin 
+        # self.ability = ability
         self.motto = random.choice(mottos)
     
     def sayMotto(self):
         print(f"As {self.name} enters he says {self.motto}")
 
     def intro(self):
-        print(f"Narrator: Welcome {self.name} he is from {self.origin} and his ability is {self.ability}")
+        print(f"Narrator: Welcome {self.name}")
 
 
 
@@ -23,9 +23,9 @@ class Player:
 
 
 
-test = Player("itachi", "naruto", "sharingan", "oh man")
-test2 = Player("naruto", "naruto", "nine tails", "k")
+# test = Player("itachi", "naruto", "sharingan", "oh man")
+# test2 = Player("naruto", "naruto", "nine tails", "k")
 
-test.sayMotto()
-test.intro()
-test2.intro()
+# test.sayMotto()
+# test.intro()
+# test2.intro()
