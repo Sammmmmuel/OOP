@@ -3,7 +3,7 @@ from player import Player
 from easterEgg import EasterEgg
 
 
-class Menu(EasterEgg): 
+class Menu(EasterEgg, Arena): 
     def __init__(self):
         self.arena = None
     def popUp(self):
@@ -11,8 +11,6 @@ class Menu(EasterEgg):
 
     def questions(self):
         choices = ["Itachi", "Naruto", "Sasuke", "Madara", "Obito", "Minato", "Jiraiya", "Pain"]
-        # for player in range(len(players)): 
-        #     players[player] = players[player].lower()
         print("Choose A charater from Naruto!")
         character1 = None
         character2 = None
@@ -29,29 +27,11 @@ class Menu(EasterEgg):
                         character1 = Player(name, "")
                         character1.intro()
                         print("Choose Another Character")
-                        # break
-                
             elif character2 is None:
                 for choice in choices:
                     if name == choice:
                         character2 = Player(name, "")
                         character2.intro()
-                        # break
-                # if userCharacter1 == choices:
-                #     character1 = Player(userCharacter1, "")
-                #     character1.intro()
-                #     userCharacter2 = input("Choose Another Character\n")
-                # elif userCharacter1 == "lol":
-                #     self.call = EasterEgg("1")
-                #     self.call.trick()
-                #     break
-                # elif userCharacter1 == "twitch":
-                #     self.call = EasterEgg("1")
-                #     self.call.promo()
-                #     break
-                # else:
-                #     print("Not Yet Implemented, Try Again!")
-                #     break
         self.arena = Arena(character1, character2)
         self.arena.fight()
 

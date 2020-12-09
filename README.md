@@ -1,0 +1,1 @@
+This is a naruto battle simulator where you can fight a hanfdul of charactesr from naruto of your choice and put them in a battle to the death where the outcome is decided based on a 50/50 ratio.  
